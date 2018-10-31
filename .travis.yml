@@ -2,5 +2,5 @@ language: java
 script:
   - ./gradlew check
   - ./gradlew jacocoTestReport
-after success:
-  - bash <(curl -s https://codecov.io/bash
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
