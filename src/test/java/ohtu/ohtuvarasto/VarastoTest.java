@@ -92,7 +92,7 @@ public class VarastoTest {
     @Test
     public void konstruktorissaVoiLisätäVarastoonSaldoa() {
         Varasto v = new Varasto(20, 10);
-        assertEquals(1, v.getSaldo(), vertailuTarkkuus);
+        assertEquals(10, v.getSaldo(), vertailuTarkkuus);
     }
     
     @Test
