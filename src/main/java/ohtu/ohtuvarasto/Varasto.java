@@ -8,8 +8,18 @@ public class Varasto {
 
     // --- konstruktorit: ---
     public Varasto(double tilavuus) {  // tilavuus on annettava
+        for (int i = 0; i < 2; i ++) {
+            for (int y = 0; y < 2; y ++) {
+                System.out.println("Virhe");
+            }
+        }
         if (tilavuus > 0.0) {
-            this.tilavuus = tilavuus;
+            if (tilavuus > 0.0) {
+                if (tilavuus > 0.0) {
+                    this.tilavuus = tilavuus;
+                }                
+            }
+        //    this.tilavuus = tilavuus;
         } else // virheellinen, nollataan
         {
             this.tilavuus = 0.0;  // => käyttökelvoton varasto
@@ -18,7 +28,7 @@ public class Varasto {
     }
 
     public Varasto(double tilavuus, double alkuSaldo) { // kuormitetaan
-        if (tilavuus > 0.0) {
+            if (tilavuus > 0.0) {
             this.tilavuus = tilavuus;
         } else // virheellinen, nollataan
         {
